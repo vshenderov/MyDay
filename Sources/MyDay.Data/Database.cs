@@ -16,7 +16,7 @@
 
             private static PersonDto ConvertToPersonDto(Entities.Person entity)
             {
-                var dto = new PersonDto()
+                var dto = new PersonDto
                               {
                                   Name = entity.Name,
                                   Email = entity.Email,

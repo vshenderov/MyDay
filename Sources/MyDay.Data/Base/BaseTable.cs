@@ -1,6 +1,5 @@
 ﻿namespace MyDay.Data.Base
 {
-    using System;
     using System.Collections.Generic;
     using System.Data;
     using System.Linq;
@@ -99,24 +98,6 @@
             {
                 transaction.Dispose();
             }
-        }
-
-        public static void Update(Guid id, Dictionary<string, string> updates)
-        {
-            var entity = Session.Get<TEntity>(id);
-
-            var type = typeof(TEntity);
-            foreach (var update in updates)
-            {
-                var property = type.GetProperties().FirstOrDefault(x => x.Name == update.Key);
-
-                if (property != null)
-                {
-                    property.SetValue(entity, Convert.ChangeType(update.Value, property.PropertyType), null);
-                }
-            }
-
-            Update(entity);
         }
     }
 }
