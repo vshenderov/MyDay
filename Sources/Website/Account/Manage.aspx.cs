@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Microsoft.AspNet.Membership.OpenAuth;
-
-namespace MyDay.Account
+﻿namespace MyDay.Web.Account
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using Microsoft.AspNet.Membership.OpenAuth;
+
     public partial class Manage : System.Web.UI.Page
     {
         protected string SuccessMessage

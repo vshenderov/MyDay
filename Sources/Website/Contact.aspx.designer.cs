@@ -7,9 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyDay
-{
-    public partial class Contact
-    {
+namespace MyDay.Web {
+    
+    
+    public partial class Contact {
     }
 }

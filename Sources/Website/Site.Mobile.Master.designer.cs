@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyDay {
+namespace MyDay.Web {
     
     
     public partial class Site_Mobile {
