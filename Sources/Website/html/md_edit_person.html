@@ -1,0 +1,122 @@
+<!--#include virtual="/html/include_header.html"-->
+
+<body>
+
+<div class="mainwrapper">
+    <!--#include virtual="/html/include_header_section.html"-->	
+	
+    <!--#include virtual="/html/include_left_panel.html"-->
+    
+    <div class="rightpanel">
+	
+		<!--#include virtual="/html/include_page_title.html"-->
+        
+        <div class="maincontent">
+            <div class="maincontentinner">
+                <div class="row-fluid">
+					<div class="span12">
+						<form action="editprofile.html" class="stdform" method="post">
+							
+							<div class="widgetbox  personal-information">
+								<h4 class="widgettitle">Person Information</h4>
+								<div class="widgetcontent">
+									<p>
+										<label>Person name:</label>
+										<input type="text" name="username" class="input-xlarge" value="Person 1" />
+									</p>
+									<p>
+										<label>Email:</label>
+										<input type="text" name="email" class="input-xlarge" value="user1@email.com" />
+									</p>
+								</div>
+							</div>
+							
+							<div class="widgetbox services-info">
+								<h4 class="widgettitle">Services information</h4>
+								<div class="widgetcontent">
+									<p>
+										<label>Select</label>
+										<span class="field inline-fields">
+											<select class="uniformselect" name="select">
+												<option value="">Choose One</option>
+												<option value="">Selection One</option>
+												<option value="">Selection Two</option>
+												<option value="">Selection Three</option>
+												<option value="">Selection Four</option>
+											</select>
+											<input class="input-large" type="text" placeholder=".input-large" name="input3">
+											<a href="#">Add</a>
+										</span>
+									</p>
+								</div>
+								<h4 class="widgettitle">Persons services</h4>
+								<div id="dyntable_wrapper" class="dataTables_wrapper" role="grid">
+									<table id="dyntable" class="table table-bordered dataTable">
+										<colgroup>
+											<col class="con1" />
+											<col class="con0" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th class="head0">Service title</th>
+												<th class="head1">System id</th>
+												<th class="head0">Service action</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+                                                    <img src="../include/i/icons/tp.png" width="30" height="30" class="service-icon">
+                                                	<a href="http://targetprocess.colours.nl/">Target process</a>
+                                                </td>
+												<td><a href="http://targetprocess.colours.nl/PersonalSettings.aspx?acid=C25942C5A326C047342F8486E87C6AB0">user ID</a></td>
+												<td class="center"><a href=""><span class="icon-trash"></span></a></td>
+											</tr>
+											<tr>
+												<td>
+                                                    <img src="../include/i/icons/gh.png" width="30" height="30" class="service-icon">
+                                                	<a href="http://github.com/">Github</a>
+                                                </td>
+												<td><a href="https://github.com/garrick2k">garrick2k</a></td>
+												<td class="center"><a href=""><span class="icon-trash"></span></a></td>
+											</tr>
+											<tr>
+												<td>
+                                                    <img src="../include/i/icons/ig.png" width="30" height="30" class="service-icon">
+                                                	<a href="http://instagram.com/">Instagram</a>
+                                                </td>
+												<td><a href="https://instagram.com/">instagram account</a></td>
+												<td class="center"><a href=""><span class="icon-trash"></span></a></td>
+											</tr>
+											<tr>
+												<td>
+                                                    <img src="../include/i/icons/fb.png" width="30" height="30" class="service-icon">
+                                                	<a href="http://facebook.com/">Facebook</a>
+                                                </td>
+												<td><a href="https://www.facebook.com/igor.sivakov.7">Igor Sivakov</a></td>
+												<td class="center"><a href=""><span class="icon-trash"></span></a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							
+							<p>
+								<button type="submit" class="btn btn-primary">Update person info</button> &nbsp; <a href="">Delete person</a>
+							</p>
+							
+						</form>
+					</div><!--span12-->
+				</div><!--row-fluid-->
+                    
+				<!--#include virtual="/html/include_footer_section.html"-->
+                
+            </div><!--maincontentinner-->
+        </div><!--maincontent-->
+        
+    </div><!--rightpanel-->
+    
+</div><!--mainwrapper-->
+
+</body>
+</html>
