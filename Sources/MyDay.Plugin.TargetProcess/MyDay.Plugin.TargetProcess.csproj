@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3C1D2397-EBE6-4D10-ABB3-50DA11AFD172}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{5C13BE2E-4522-42E1-A3EC-E7D04D92B74B}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MyDay.Grabber</RootNamespace>
-    <AssemblyName>MyDay.Grabber</AssemblyName>
+    <RootNamespace>MyDay.Plugin.TargetProcess</RootNamespace>
+    <AssemblyName>MyDay.Plugin.TargetProcess</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,17 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="TargetProcessGrabber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MyDay.Data\MyDay.Data.csproj">
-      <Project>{13b1b4ed-96e5-4f60-b17d-3b32f828fdb8}</Project>
-      <Name>MyDay.Data</Name>
-    </ProjectReference>
     <ProjectReference Include="..\MyDay.Plugin\MyDay.Plugin.csproj">
       <Project>{7c94ee45-dd19-4267-a965-1547154ff94f}</Project>
       <Name>MyDay.Plugin</Name>
