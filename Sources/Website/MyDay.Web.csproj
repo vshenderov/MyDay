@@ -204,6 +204,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
+    <Content Include="App_Config\ConnectionStrings.config" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -337,6 +338,12 @@
   <ItemGroup>
     <Content Include="Account\Web.config" />
     <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyDay.Data\MyDay.Data.csproj">
+      <Project>{13b1b4ed-96e5-4f60-b17d-3b32f828fdb8}</Project>
+      <Name>MyDay.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
