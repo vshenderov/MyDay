@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Web;
-using Microsoft.AspNet.Membership.OpenAuth;
-
-namespace MyDay.Account
+﻿namespace MyDay.Web.Account
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Web;
+    using Microsoft.AspNet.Membership.OpenAuth;
+
     public partial class OpenAuthProviders : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)

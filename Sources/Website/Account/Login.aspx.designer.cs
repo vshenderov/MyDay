@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyDay.Account
-{
-
-
-    public partial class Login
-    {
-
+namespace MyDay.Web.Account {
+    
+    
+    public partial class Login {
+        
         /// <summary>
         /// RegisterHyperLink control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace MyDay.Account
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink RegisterHyperLink;
-
+        
         /// <summary>
         /// OpenAuthLogin control.
         /// </summary>
@@ -30,6 +28,6 @@ namespace MyDay.Account
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::MyDay.Account.OpenAuthProviders OpenAuthLogin;
+        protected global::MyDay.Web.Account.OpenAuthProviders OpenAuthLogin;
     }
 }

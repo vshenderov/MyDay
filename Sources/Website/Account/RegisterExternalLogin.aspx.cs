@@ -1,11 +1,10 @@
-﻿using System;
-using System.Web;
-using System.Web.Security;
-using DotNetOpenAuth.AspNet;
-using Microsoft.AspNet.Membership.OpenAuth;
-
-namespace MyDay.Account
+﻿namespace MyDay.Web.Account
 {
+    using System;
+    using System.Web;
+    using System.Web.Security;
+    using Microsoft.AspNet.Membership.OpenAuth;
+
     public partial class RegisterExternalLogin : System.Web.UI.Page
     {
         protected string ProviderName

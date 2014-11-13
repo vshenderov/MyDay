@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Security;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-
-namespace MyDay
+﻿namespace MyDay.Web
 {
+    using System;
+    using System.Web;
+    using System.Web.Security;
+    using System.Web.UI;
+
     public partial class SiteMaster : MasterPage
     {
         private const string AntiXsrfTokenKey = "__AntiXsrfToken";

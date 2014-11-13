@@ -7,11 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyDay
-{
-
-
-    public partial class _Default
-    {
+namespace MyDay.Web {
+    
+    
+    public partial class _Default {
     }
 }
