@@ -6,6 +6,8 @@
 <link rel="stylesheet" href="/include/c/bootstrap-fileupload.min.css" type="text/css" />
 <link rel="stylesheet" href="/include/c/bootstrap-timepicker.min.css" type="text/css" />
 <link rel="stylesheet" href="/include/p/prettify.css" type="text/css" />
+<link rel="stylesheet" href="/include/l/timeglider_version_1.0.3/timeglider/Timeglider.css" type="text/css">
+<link rel="stylesheet" href="/include/l/timeglider_version_1.0.3/timeglider/timeglider.datepicker.css" type="text/css">
 
 <script type="text/javascript" src="/include/j/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="/include/j/jquery-migrate-1.1.1.min.js"></script>
@@ -47,3 +49,21 @@
 <script type="text/javascript" src="/include/j/elements.js"></script>
 <script type="text/javascript" src="/include/j/forms.js"></script>
 <script type="text/javascript" src="/include/j/wysiwyg.js"></script>
+
+<script src="/include/l/timeglider_version_1.0.3/js/underscore-min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/include/l/timeglider_version_1.0.3/js/backbone-min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/include/l/timeglider_version_1.0.3/js/json2.js" type="text/javascript" charset="utf-8"></script>
+<script src="/include/l/timeglider_version_1.0.3/js/jquery.tmpl.js" type="text/javascript" charset="utf-8"></script>
+<script src="/include/l/timeglider_version_1.0.3/js/ba-tinyPubSub.js" type="text/javascript" charset="utf-8"></script>
+<script src="/include/l/timeglider_version_1.0.3/js/jquery.mousewheel.js" type="text/javascript" charset="utf-8"></script>
+<script src="/include/l/timeglider_version_1.0.3/js/jquery.ui.ipad.js" type="text/javascript" charset="utf-8"></script>
+<script src="/include/l/timeglider_version_1.0.3/js/globalize.js" type="text/javascript" charset="utf-8"></script>	
+<script src="/include/l/timeglider_version_1.0.3/js/ba-debug.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="/include/l/timeglider_version_1.0.3/timeglider/TG_Date.js" type="text/javascript" charset="utf-8"></script>
+<script src="/include/l/timeglider_version_1.0.3/timeglider/TG_Org.js" type="text/javascript" charset="utf-8"></script>
+<script src="/include/l/timeglider_version_1.0.3/timeglider/TG_Timeline.js" type="text/javascript" charset="utf-8"></script>
+<script src="/include/l/timeglider_version_1.0.3/timeglider/TG_TimelineView.js" type="text/javascript" charset="utf-8"></script>
+<script src="/include/l/timeglider_version_1.0.3/timeglider/TG_Mediator.js" type="text/javascript" charset="utf-8"></script>
+<script src="/include/l/timeglider_version_1.0.3/timeglider/timeglider.timeline.widget.js" type="text/javascript" charset="utf-8"></script>
+<script src="/include/l/timeglider_version_1.0.3/timeglider/timeglider.datepicker.js" type="text/javascript" charset="utf-8"></script>

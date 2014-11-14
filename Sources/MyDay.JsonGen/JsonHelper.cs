@@ -10,7 +10,7 @@
 
     public static class JsonHelper
     {
-        public static string SerializeTimeline(int personId, DateTime date)
+        public static string SerializeTimeline(int personId)
         {
             var timelines = new List<Timeline>();
             var timeline = new Timeline();

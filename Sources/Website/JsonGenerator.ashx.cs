@@ -20,11 +20,8 @@
             int id;
             int.TryParse(idParam, out id);
 
-            var dateParam = context.Request.QueryString["Date"];
-            var date = DateTime.Parse(dateParam);
-
             context.Response.ContentType = "application/json";
-            context.Response.Write(JsonHelper.SerializeTimeline(id, date));
+            context.Response.Write(JsonHelper.SerializeTimeline(id));
         }
     }
 }
