@@ -2,22 +2,33 @@
 {
     using System;
     using System.Web.UI;
+    using System.Web.UI.WebControls;
     using MyDay.Data;
-    using MyDay.Data.Entities;
 
-    public partial class _Default : Page
+    public partial class Default : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //var p = new Person();
-            //p.Name = "Test 1";
-            //p.Email = "Test 1";
+            this.UpdateList();
+        }
 
-            //Database.Person.Save(p);
+        protected void RepeaterPersonsItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+            if (e.CommandName == "Delete" && e.CommandArgument.ToString() != string.Empty)
+            {
+                var id = 0;
+                int.TryParse(e.CommandArgument.ToString(), out id);
+                var person = Database.Person.Get(id);
+                Database.Person.Delete(person);
 
-            var persons = Database.Person.GetPersons();
+                this.UpdateList();
+            }
+        }
 
-            Response.Write(persons[0].Name);
+        private void UpdateList()
+        {
+            this.rptPersons.DataSource = Database.Person.GetPersons();
+            this.rptPersons.DataBind();
         }
     }
 }

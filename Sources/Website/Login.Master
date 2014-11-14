@@ -1,0 +1,20 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Login.Master.cs" Inherits="MyDay.Web.LoginMaster" %>
+<%@ Register TagPrefix="uc" TagName="HeaderTags" Src="~/Controls/HeaderTags.ascx" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title><%: Page.Title %> - MyDay</title>
+    <uc:HeaderTags runat="server" />
+</head>
+<body class="loginpage">
+    <form runat="server">
+        <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+    </form>
+
+<div class="loginfooter">
+    <p>&copy; 2013. Shamcey Admin Template. All Rights Reserved.</p>
+</div>
+</body>
+</html>
