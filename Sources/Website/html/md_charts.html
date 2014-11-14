@@ -40,11 +40,11 @@
 		var tg1 = jQuery("#person-timeline").timeline({
 			"data_source": "/include/l/timeglider_version_1.0.3/json/js_history.json",
 			"icon_folder": "/include/i/icons/",
-			"constrain_to_data": true,
 			"show_footer": false,
-			"loaded": function() {
-				//console.log(tg1);
-				//tg1.zoom(-1);
+			"loaded": function(a,b) {
+				var a = setTimeout(function(){
+					b.zoom(-25);
+				}, 500);
 			},
 		});
 	}

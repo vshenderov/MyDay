@@ -18,6 +18,7 @@
 /* only font-family reference here, 
    including overriding jquery ui css */
 .timeglider-container, #timeglider-measure-span, .ui-widget, .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+	font-family:"franklin-gothic-urw-cond", Arial, Helvetica, sans-serif;
 }
 
 
@@ -299,6 +300,11 @@
 	cursor: pointer;
 	background-repeat: no-repeat;
 	background-position: 9px;
+	opacity: 0.8;
+}
+
+.tg-slider-plusminus:hover {
+	opacity: 1;
 }
 
 
