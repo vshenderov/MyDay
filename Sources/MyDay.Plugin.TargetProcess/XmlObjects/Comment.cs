@@ -14,6 +14,9 @@
         [XmlElement("CreateDate")]
         public string CreateDate { get; set; }
 
+        [XmlElement("General")]
+        public General General { get; set; }
+
         [XmlElement("Owner")]
         public Owner Owner { get; set; }
     }

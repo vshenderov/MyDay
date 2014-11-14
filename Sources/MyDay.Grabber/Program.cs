@@ -26,8 +26,8 @@
                                 var toolName = pluginclass.GetName();
                                 var tool = Database.Tool.GetToolByName(toolName);
                                 var logins = Database.PersonTool.GetLoginsByTool(tool);
-                                var dateFrom = DateTime.Now.AddDays(-2);
-                                var dateTo = dateFrom.AddDays(2);
+                                var dateTo = DateTime.Now;
+                                var dateFrom = dateTo.AddDays(-3);
 
                                 var results = pluginclass.Grab(logins, dateFrom, dateTo);
 
@@ -38,6 +38,7 @@
                                     
                                     {
                                         var activity = new Data.Entities.Activity();
+                                        activity.Title = r.Title;
                                         activity.Content = r.Content;
                                         activity.Date = r.Time;
                                         activity.PersonId = pt.PersonId;

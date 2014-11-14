@@ -95,6 +95,7 @@ CREATE TABLE [dbo].[Activity](
 	[PersonId] [int] NOT NULL,
 	[ToolId] [int] NOT NULL,
 	[Date] [datetime] NOT NULL,
+	[Title] [varchar](MAX) NOT NULL,
 	[Content] [varchar](MAX) NOT NULL,
  CONSTRAINT [PK_Activity] PRIMARY KEY CLUSTERED 
 (
@@ -146,3 +147,12 @@ values('Instagram','ig.png')
 
 insert into PersonTool(PersonId,ToolId,Account)
 values(3,1,'3')
+
+insert into PersonTool(PersonId,ToolId,Account)
+values(1,1,'5')
+
+insert into PersonTool(PersonId,ToolId,Account)
+values(2,1,'11')
+
+insert into PersonTool(PersonId,ToolId,Account)
+values(1,2,'valikvs')
