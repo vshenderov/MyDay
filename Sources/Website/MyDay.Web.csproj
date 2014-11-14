@@ -785,6 +785,7 @@
     <Content Include="include\i\icons\.DS_Store" />
     <Content Include="include\i\thumbs\.DS_Store" />
     <Content Include="Login.Master" />
+    <Content Include="JsonGenerator.ashx" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Person.aspx" />
     <Content Include="Scripts\jquery-1.8.2.js" />
@@ -865,6 +866,9 @@
     <Compile Include="Controls\HeaderTags.ascx.designer.cs">
       <DependentUpon>HeaderTags.ascx</DependentUpon>
     </Compile>
+    <Compile Include="JsonGenerator.ashx.cs">
+      <DependentUpon>JsonGenerator.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Login.Master.cs">
       <DependentUpon>Login.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -929,6 +933,10 @@
     <ProjectReference Include="..\MyDay.Data\MyDay.Data.csproj">
       <Project>{13b1b4ed-96e5-4f60-b17d-3b32f828fdb8}</Project>
       <Name>MyDay.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyDay.JsonGen\MyDay.JsonGen.csproj">
+      <Project>{fe59ff1e-efdb-4f9c-b730-24446593930e}</Project>
+      <Name>MyDay.JsonGen</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

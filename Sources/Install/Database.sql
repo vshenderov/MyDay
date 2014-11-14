@@ -66,7 +66,7 @@ CREATE TABLE [dbo].[PersonTool](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
 	[PersonId] [int] NOT NULL,
 	[ToolId] [int] NOT NULL,
-	[Login] [varchar](255) NOT NULL,
+	[Account] [varchar](255) NOT NULL,
  CONSTRAINT [PK_PersonTool] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
@@ -135,3 +135,6 @@ values('GitHub')
 
 insert into Tool(Name)
 values('Instagram')
+
+insert into PersonTool(PersonId,ToolId,Account)
+values(3,1,'3')

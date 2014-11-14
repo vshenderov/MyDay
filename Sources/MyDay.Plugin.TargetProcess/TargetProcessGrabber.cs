@@ -36,7 +36,7 @@
                 {
                     User = comment.Owner.Id.ToString(CultureInfo.InvariantCulture),
                     Content = comment.Description,
-                    Time = new DateTime()
+                    Time = DateTime.Parse(comment.CreateDate),
                 });
             }
            
