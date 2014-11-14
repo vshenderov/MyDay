@@ -2,7 +2,6 @@
 {
     using System;
     using System.IO;
-    using System.Management.Instrumentation;
     using System.Reflection;
     using MyDay.Data;
     using MyDay.Plugin;
@@ -41,7 +40,8 @@
                                         var activity = new Data.Entities.Activity();
                                         activity.Content = r.Content;
                                         activity.Date = r.Time;
-                                        activity.PersonToolId = pt.Id;
+                                        activity.PersonId = pt.PersonId;
+                                        activity.ToolId = pt.ToolId;
 
                                         Database.Activity.Save(activity);
                                     }

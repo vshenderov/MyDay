@@ -1,7 +1,11 @@
 ﻿namespace MyDay.Data
 {
+    using System.Collections;
     using System.Collections.Generic;
     using System.Linq;
+
+    using FluentNHibernate.Utils;
+
     using MyDay.Data.Base;
     using MyDay.Data.Config;
     using MyDay.Data.IO;
@@ -21,7 +25,13 @@
 
         public class Activity : BaseTable<Entities.Activity>
         {
-
+            public static List<Entities.Activity> GetActivities(int personId)
+            {
+                return Session.CreateCriteria(typeof(Entities.Activity))
+                    .Add(Restrictions.Eq(Projections.Property<Entities.Activity>(x => x.PersonId), personId))
+                                            .List<Entities.Activity>()
+                        .ToList();
+            }
         }
 
         public class PersonTool : BaseTable<Entities.PersonTool>

@@ -47,7 +47,8 @@ SET ANSI_PADDING ON
 GO
 CREATE TABLE [dbo].[Tool](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
-	[Name] [varchar](64) NOT NULL,
+	[Name] [varchar](255) NOT NULL,
+	[Icon] [varchar](255) NOT NULL,
  CONSTRAINT [PK_Tool] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
@@ -91,7 +92,8 @@ SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Activity](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
-	[PersonToolId] [int] NOT NULL,
+	[PersonId] [int] NOT NULL,
+	[ToolId] [int] NOT NULL,
 	[Date] [datetime] NOT NULL,
 	[Content] [varchar](MAX) NOT NULL,
  CONSTRAINT [PK_Activity] PRIMARY KEY CLUSTERED 
@@ -101,10 +103,16 @@ CREATE TABLE [dbo].[Activity](
 ) ON [PRIMARY]
 
 GO
-ALTER TABLE [dbo].[Activity]  WITH CHECK ADD  CONSTRAINT [FK_Activity_PersonTool] FOREIGN KEY([PersonToolId])
-REFERENCES [dbo].[PersonTool] ([Id])
+ALTER TABLE [dbo].[Activity]  WITH CHECK ADD  CONSTRAINT [FK_Activity_Person] FOREIGN KEY([PersonId])
+REFERENCES [dbo].[Person] ([Id])
 GO
-ALTER TABLE [dbo].[Activity] CHECK CONSTRAINT [FK_Activity_PersonTool]
+ALTER TABLE [dbo].[Activity] CHECK CONSTRAINT [FK_Activity_Person]
+GO
+
+ALTER TABLE [dbo].[Activity]  WITH CHECK ADD  CONSTRAINT [FK_Activity_Tool] FOREIGN KEY([ToolId])
+REFERENCES [dbo].[Tool] ([Id])
+GO
+ALTER TABLE [dbo].[Activity] CHECK CONSTRAINT [FK_Activity_Tool]
 GO
 
 CREATE USER [myday] FOR LOGIN [myday] WITH DEFAULT_SCHEMA=[dbo]
@@ -127,14 +135,14 @@ values('Yuliya Kaborda','y.kaborda@colours.nl')
 insert into Person(Name,Email)
 values('Nicolle Severens','n.severens@colours.nl')
 
-insert into Tool(Name)
-values('TargetProcess')
+insert into Tool(Name,Icon)
+values('TargetProcess','tp.png')
 
-insert into Tool(Name)
-values('GitHub')
+insert into Tool(Name,Icon)
+values('GitHub','gh.png')
 
-insert into Tool(Name)
-values('Instagram')
+insert into Tool(Name,Icon)
+values('Instagram','ig.png')
 
 insert into PersonTool(PersonId,ToolId,Account)
 values(3,1,'3')

@@ -25,5 +25,8 @@
 
         [JsonProperty("events", NullValueHandling = NullValueHandling.Ignore)]
         public List<Activity> Activites { get; set; }
+
+        [JsonProperty("legend", NullValueHandling = NullValueHandling.Ignore)]
+        public List<Tool> Tools { get; set; }
     }
 }

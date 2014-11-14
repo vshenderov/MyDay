@@ -10,6 +10,7 @@
             this.Table("Tool");
             this.Id(x => x.Id).GeneratedBy.Identity();
             this.Map(x => x.Name).Length(255).Not.Nullable();
+            this.Map(x => x.Icon).Length(255).Not.Nullable();
         }
     }
 }

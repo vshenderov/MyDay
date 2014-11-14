@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IO\Tool.cs" />
     <Compile Include="JsonHelper.cs" />
     <Compile Include="IO\Activity.cs" />
     <Compile Include="IO\Timeline.cs" />
@@ -49,6 +50,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyDay.Data\MyDay.Data.csproj">
+      <Project>{13b1b4ed-96e5-4f60-b17d-3b32f828fdb8}</Project>
+      <Name>MyDay.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
