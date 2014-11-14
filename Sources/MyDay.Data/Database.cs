@@ -18,6 +18,7 @@
             {
                 var dto = new PersonDto
                               {
+                                  Id = entity.Id,
                                   Name = entity.Name,
                                   Email = entity.Email,
                               };

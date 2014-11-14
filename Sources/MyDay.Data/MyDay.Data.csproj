@@ -52,9 +52,11 @@
   <ItemGroup>
     <Compile Include="Base\BaseTable.cs" />
     <Compile Include="Database.cs" />
+    <Compile Include="Entities\Activity.cs" />
     <Compile Include="Entities\Person.cs" />
     <Compile Include="Entities\Tool.cs" />
     <Compile Include="IO\PersonDto.cs" />
+    <Compile Include="Mapping\ActivityMap.cs" />
     <Compile Include="Mapping\ToolMap.cs" />
     <Compile Include="Mapping\PersonMap.cs" />
     <Compile Include="Config\NHibernateHelper.cs" />

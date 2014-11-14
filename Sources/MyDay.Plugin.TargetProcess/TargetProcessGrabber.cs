@@ -12,6 +12,11 @@
         private const string QueryGetComments = "api/v1/comments?where=(createdate gte '{0}') and (createdate lt '{1}') and (owner.id in ({2}))&take=500";
         private readonly List<Comment> targetProcessComments = new List<Comment>();
 
+        public string GetName()
+        {
+            return "TargetProcess";
+        }
+
         public List<Activity> Grab(List<string> accounts, DateTime from, DateTime to)
         {
             var list = new List<Activity>();

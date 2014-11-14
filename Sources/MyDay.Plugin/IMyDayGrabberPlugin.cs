@@ -5,6 +5,8 @@
 
     public interface IMyDayGrabberPlugin
     {
+        string GetName();
+
         List<Activity> Grab(List<string> accounts, DateTime from, DateTime to);
     }
 }

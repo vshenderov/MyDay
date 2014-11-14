@@ -7,27 +7,36 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyDay.Web.Account {
+namespace MyDay.Web {
     
     
     public partial class Login {
         
         /// <summary>
-        /// RegisterHyperLink control.
+        /// inputLogin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink RegisterHyperLink;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inputLogin;
         
         /// <summary>
-        /// OpenAuthLogin control.
+        /// inputPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::MyDay.Web.Account.OpenAuthProviders OpenAuthLogin;
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword inputPassword;
+        
+        /// <summary>
+        /// inputRemember control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox inputRemember;
     }
 }

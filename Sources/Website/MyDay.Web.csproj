@@ -72,41 +72,8 @@
     <Reference Include="Microsoft.ScriptManager.WebForms, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
       <HintPath>packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
     </Reference>
-    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
       <HintPath>packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OAuth, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OpenId, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
-    </Reference>
-    <Reference Include="DotNetOpenAuth.AspNet, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\DotNetOpenAuth.AspNet.4.1.4.12333\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>packages\Microsoft.AspNet.Membership.OpenAuth.1.0.1\lib\net45\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
     </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
@@ -126,11 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="Account\Login.aspx" />
-    <Content Include="Account\Manage.aspx" />
-    <Content Include="Account\OpenAuthProviders.ascx" />
-    <Content Include="Account\Register.aspx" />
-    <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="AddPerson.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -187,6 +150,8 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Controls\Footer.ascx" />
+    <Content Include="Controls\HeaderTags.ascx" />
     <Content Include="Images\accent.png" />
     <Content Include="Images\bullet.png" />
     <Content Include="Images\heroAccent.png" />
@@ -203,9 +168,625 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="include\c\animate.delay.css" />
+    <Content Include="include\c\animate.min.css" />
+    <Content Include="include\c\bootstrap-fileupload.min.css" />
+    <Content Include="include\c\bootstrap-responsive.min.css" />
+    <Content Include="include\c\bootstrap-timepicker.min.css" />
+    <Content Include="include\c\bootstrap.min.css" />
+    <Content Include="include\c\colorbox.css" />
+    <Content Include="include\c\colorpicker.css" />
+    <Content Include="include\c\flexslider.css" />
+    <Content Include="include\c\font-awesome.min.css" />
+    <Content Include="include\c\fullcalendar.css" />
+    <Content Include="include\c\isotope.css" />
+    <Content Include="include\c\jquery.alerts.css" />
+    <Content Include="include\c\jquery.chosen.css" />
+    <Content Include="include\c\jquery.jgrowl.css" />
+    <Content Include="include\c\jquery.tagsinput.css" />
+    <Content Include="include\c\jquery.ui.css" />
+    <Content Include="include\c\lato.css" />
+    <Content Include="include\c\prettyPhoto.css" />
+    <Content Include="include\c\responsive-tables.css" />
+    <Content Include="include\c\roboto.css" />
+    <Content Include="include\c\style.brown.css" />
+    <Content Include="include\c\style.default.css" />
+    <Content Include="include\c\style.green.css" />
+    <Content Include="include\c\style.navyblue.css" />
+    <Content Include="include\c\style.palegreen.css" />
+    <Content Include="include\c\style.red.css" />
+    <Content Include="include\c\ui.spinner.css" />
+    <Content Include="include\c\uniform.tp.css" />
+    <Content Include="include\f\fontawesome\fontawesome-webfont.svg" />
+    <Content Include="include\f\lato\Lato-Bla-webfont.svg" />
+    <Content Include="include\f\lato\Lato-BlaIta-webfont.svg" />
+    <Content Include="include\f\lato\Lato-Bol-webfont.svg" />
+    <Content Include="include\f\lato\Lato-BolIta-webfont.svg" />
+    <Content Include="include\f\lato\Lato-Hai-webfont.svg" />
+    <Content Include="include\f\lato\Lato-HaiIta-webfont.svg" />
+    <Content Include="include\f\lato\Lato-Lig-webfont.svg" />
+    <Content Include="include\f\lato\Lato-LigIta-webfont.svg" />
+    <Content Include="include\f\lato\Lato-Reg-webfont.svg" />
+    <Content Include="include\f\lato\Lato-RegIta-webfont.svg" />
+    <Content Include="include\f\lato\SIL Open Font License 1.1.txt" />
+    <Content Include="include\f\roboto\Google Android License.txt" />
+    <Content Include="include\f\roboto\Roboto-Black-webfont.svg" />
+    <Content Include="include\f\roboto\Roboto-BlackItalic-webfont.svg" />
+    <Content Include="include\f\roboto\Roboto-Bold-webfont.svg" />
+    <Content Include="include\f\roboto\Roboto-BoldCondensed-webfont.svg" />
+    <Content Include="include\f\roboto\Roboto-BoldCondensedItalic-webfont.svg" />
+    <Content Include="include\f\roboto\Roboto-BoldItalic-webfont.svg" />
+    <Content Include="include\f\roboto\Roboto-Condensed-webfont.svg" />
+    <Content Include="include\f\roboto\Roboto-CondensedItalic-webfont.svg" />
+    <Content Include="include\f\roboto\Roboto-Italic-webfont.svg" />
+    <Content Include="include\f\roboto\Roboto-Light-webfont.svg" />
+    <Content Include="include\f\roboto\Roboto-LightItalic-webfont.svg" />
+    <Content Include="include\f\roboto\Roboto-Medium-webfont.svg" />
+    <Content Include="include\f\roboto\Roboto-MediumItalic-webfont.svg" />
+    <Content Include="include\f\roboto\Roboto-Regular-webfont.svg" />
+    <Content Include="include\f\roboto\Roboto-Thin-webfont.svg" />
+    <Content Include="include\f\roboto\Roboto-ThinItalic-webfont.svg" />
+    <Content Include="include\i\barmenu.png" />
+    <Content Include="include\i\bcarrow.png" />
+    <Content Include="include\i\bg1.png" />
+    <Content Include="include\i\blockquote.png" />
+    <Content Include="include\i\border.png" />
+    <Content Include="include\i\calarrow.png" />
+    <Content Include="include\i\check.png" />
+    <Content Include="include\i\check2.png" />
+    <Content Include="include\i\chosen-sprite.png" />
+    <Content Include="include\i\colorpicker\blank.gif" />
+    <Content Include="include\i\colorpicker\colorpicker_background.png" />
+    <Content Include="include\i\colorpicker\colorpicker_hex.png" />
+    <Content Include="include\i\colorpicker\colorpicker_hsb_b.png" />
+    <Content Include="include\i\colorpicker\colorpicker_hsb_h.png" />
+    <Content Include="include\i\colorpicker\colorpicker_hsb_s.png" />
+    <Content Include="include\i\colorpicker\colorpicker_indic.gif" />
+    <Content Include="include\i\colorpicker\colorpicker_overlay.png" />
+    <Content Include="include\i\colorpicker\colorpicker_rgb_b.png" />
+    <Content Include="include\i\colorpicker\colorpicker_rgb_g.png" />
+    <Content Include="include\i\colorpicker\colorpicker_rgb_r.png" />
+    <Content Include="include\i\colorpicker\colorpicker_select.gif" />
+    <Content Include="include\i\colorpicker\colorpicker_submit.png" />
+    <Content Include="include\i\colorpicker\custom_background.png" />
+    <Content Include="include\i\colorpicker\custom_hex.png" />
+    <Content Include="include\i\colorpicker\custom_hsb_b.png" />
+    <Content Include="include\i\colorpicker\custom_hsb_h.png" />
+    <Content Include="include\i\colorpicker\custom_hsb_s.png" />
+    <Content Include="include\i\colorpicker\custom_indic.gif" />
+    <Content Include="include\i\colorpicker\custom_rgb_b.png" />
+    <Content Include="include\i\colorpicker\custom_rgb_g.png" />
+    <Content Include="include\i\colorpicker\custom_rgb_r.png" />
+    <Content Include="include\i\colorpicker\custom_submit.png" />
+    <Content Include="include\i\colorpicker\select.png" />
+    <Content Include="include\i\colorpicker\select2.png" />
+    <Content Include="include\i\colorpicker\slider.png" />
+    <Content Include="include\i\comlogo.png" />
+    <Content Include="include\i\controls.png" />
+    <Content Include="include\i\droparrow.png" />
+    <Content Include="include\i\glyphicons-halflings-white.png" />
+    <Content Include="include\i\glyphicons-halflings.png" />
+    <Content Include="include\i\iconsweets-icons-white.png" />
+    <Content Include="include\i\iconsweets-icons.png" />
+    <Content Include="include\i\icons\bar.png" />
+    <Content Include="include\i\icons\fb.png" />
+    <Content Include="include\i\icons\gh.png" />
+    <Content Include="include\i\icons\icon-archive.png" />
+    <Content Include="include\i\icons\icon-cart.png" />
+    <Content Include="include\i\icons\icon-event.png" />
+    <Content Include="include\i\icons\icon-help.png" />
+    <Content Include="include\i\icons\icon-images.png" />
+    <Content Include="include\i\icons\ig.png" />
+    <Content Include="include\i\icons\message.png" />
+    <Content Include="include\i\icons\search.png" />
+    <Content Include="include\i\icons\tp.png" />
+    <Content Include="include\i\icons\users.png" />
+    <Content Include="include\i\leftpanelbg.png" />
+    <Content Include="include\i\loaders\loader1.gif" />
+    <Content Include="include\i\loaders\loader10.gif" />
+    <Content Include="include\i\loaders\loader11.gif" />
+    <Content Include="include\i\loaders\loader12.gif" />
+    <Content Include="include\i\loaders\loader13.gif" />
+    <Content Include="include\i\loaders\loader14.gif" />
+    <Content Include="include\i\loaders\loader15.gif" />
+    <Content Include="include\i\loaders\loader16.gif" />
+    <Content Include="include\i\loaders\loader17.gif" />
+    <Content Include="include\i\loaders\loader18.gif" />
+    <Content Include="include\i\loaders\loader19.gif" />
+    <Content Include="include\i\loaders\loader2.gif" />
+    <Content Include="include\i\loaders\loader20.gif" />
+    <Content Include="include\i\loaders\loader21.gif" />
+    <Content Include="include\i\loaders\loader22.gif" />
+    <Content Include="include\i\loaders\loader23.gif" />
+    <Content Include="include\i\loaders\loader24.gif" />
+    <Content Include="include\i\loaders\loader25.gif" />
+    <Content Include="include\i\loaders\loader26.gif" />
+    <Content Include="include\i\loaders\loader27.gif" />
+    <Content Include="include\i\loaders\loader28.gif" />
+    <Content Include="include\i\loaders\loader29.gif" />
+    <Content Include="include\i\loaders\loader3.gif" />
+    <Content Include="include\i\loaders\loader30.gif" />
+    <Content Include="include\i\loaders\loader4.gif" />
+    <Content Include="include\i\loaders\loader5.gif" />
+    <Content Include="include\i\loaders\loader6.gif" />
+    <Content Include="include\i\loaders\loader7.gif" />
+    <Content Include="include\i\loaders\loader8.gif" />
+    <Content Include="include\i\loaders\loader9.gif" />
+    <Content Include="include\i\loading.gif" />
+    <Content Include="include\i\loading_background.png" />
+    <Content Include="include\i\logo.png" />
+    <Content Include="include\i\menuarrow.png" />
+    <Content Include="include\i\minimize.png" />
+    <Content Include="include\i\next.png" />
+    <Content Include="include\i\overlay.png" />
+    <Content Include="include\i\photos\1.png" />
+    <Content Include="include\i\photos\audio.png" />
+    <Content Include="include\i\photos\thumb1.png" />
+    <Content Include="include\i\photos\thumb10.png" />
+    <Content Include="include\i\photos\thumb2.png" />
+    <Content Include="include\i\photos\thumb3.png" />
+    <Content Include="include\i\photos\thumb4.png" />
+    <Content Include="include\i\photos\thumb5.png" />
+    <Content Include="include\i\photos\thumb6.png" />
+    <Content Include="include\i\photos\thumb7.png" />
+    <Content Include="include\i\photos\thumb8.png" />
+    <Content Include="include\i\photos\thumb9.png" />
+    <Content Include="include\i\photos\video.png" />
+    <Content Include="include\i\prev.png" />
+    <Content Include="include\i\profilethumb.png" />
+    <Content Include="include\i\sliderhor.png" />
+    <Content Include="include\i\sliderver.png" />
+    <Content Include="include\i\spinner.png" />
+    <Content Include="include\i\thumbs\audio.png" />
+    <Content Include="include\i\thumbs\doc.png" />
+    <Content Include="include\i\thumbs\image1.png" />
+    <Content Include="include\i\thumbs\image2.png" />
+    <Content Include="include\i\thumbs\image3.png" />
+    <Content Include="include\i\thumbs\image4.png" />
+    <Content Include="include\i\thumbs\image5.png" />
+    <Content Include="include\i\thumbs\image6.png" />
+    <Content Include="include\i\thumbs\video.png" />
+    <Content Include="include\i\transwhite.png" />
+    <Content Include="include\i\transwhite2.png" />
+    <Content Include="include\i\uniform\bg-input-focus.png" />
+    <Content Include="include\i\uniform\bg-input.png" />
+    <Content Include="include\i\uniform\sprite.png" />
+    <Content Include="include\j\bootstrap-fileupload.min.js" />
+    <Content Include="include\j\bootstrap-timepicker.min.js" />
+    <Content Include="include\j\bootstrap.min.js" />
+    <Content Include="include\j\charCount.js" />
+    <Content Include="include\j\charts.js" />
+    <Content Include="include\j\chosen.jquery.min.js" />
+    <Content Include="include\j\colorpicker.js" />
+    <Content Include="include\j\custom.js" />
+    <Content Include="include\j\detectizr.min.js" />
+    <Content Include="include\j\elements.js" />
+    <Content Include="include\j\excanvas.min.js" />
+    <Content Include="include\j\flot\excanvas.min.js" />
+    <Content Include="include\j\flot\jquery.colorhelpers.min.js" />
+    <Content Include="include\j\flot\jquery.flot.crosshair.min.js" />
+    <Content Include="include\j\flot\jquery.flot.fillbetween.min.js" />
+    <Content Include="include\j\flot\jquery.flot.image.min.js" />
+    <Content Include="include\j\flot\jquery.flot.min.js" />
+    <Content Include="include\j\flot\jquery.flot.navigate.min.js" />
+    <Content Include="include\j\flot\jquery.flot.pie.min.js" />
+    <Content Include="include\j\flot\jquery.flot.resize.min.js" />
+    <Content Include="include\j\flot\jquery.flot.selection.min.js" />
+    <Content Include="include\j\flot\jquery.flot.stack.min.js" />
+    <Content Include="include\j\flot\jquery.flot.symbol.min.js" />
+    <Content Include="include\j\flot\jquery.flot.threshold.min.js" />
+    <Content Include="include\j\flot\LICENSE.txt" />
+    <Content Include="include\j\forms.js" />
+    <Content Include="include\j\fullcalendar.min.js" />
+    <Content Include="include\j\jquery-1.9.1.min.js" />
+    <Content Include="include\j\jquery-migrate-1.1.1.min.js" />
+    <Content Include="include\j\jquery-ui-1.9.2.min.js" />
+    <Content Include="include\j\jquery.alerts.js" />
+    <Content Include="include\j\jquery.autogrow-textarea.js" />
+    <Content Include="include\j\jquery.bxSlider.min.js" />
+    <Content Include="include\j\jquery.colorbox-min.js" />
+    <Content Include="include\j\jquery.cookie.js" />
+    <Content Include="include\j\jquery.dataTables.min.js" />
+    <Content Include="include\j\jquery.isotope.min.js" />
+    <Content Include="include\j\jquery.jgrowl.js" />
+    <Content Include="include\j\jquery.slimscroll.js" />
+    <Content Include="include\j\jquery.smartWizard.min.js" />
+    <Content Include="include\j\jquery.tagsinput.min.js" />
+    <Content Include="include\j\jquery.uniform.min.js" />
+    <Content Include="include\j\jquery.validate.min.js" />
+    <Content Include="include\j\media.js" />
+    <Content Include="include\j\modernizr.min.js" />
+    <Content Include="include\j\responsive-tables.js" />
+    <Content Include="include\j\tinymce\jquery.tinymce.js" />
+    <Content Include="include\j\tinymce\langs\en.js" />
+    <Content Include="include\j\tinymce\license.txt" />
+    <Content Include="include\j\tinymce\plugins\advhr\css\advhr.css" />
+    <Content Include="include\j\tinymce\plugins\advhr\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\advhr\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\advhr\js\rule.js" />
+    <Content Include="include\j\tinymce\plugins\advhr\langs\en_dlg.js" />
+    <Content Include="include\j\tinymce\plugins\advhr\rule.htm" />
+    <Content Include="include\j\tinymce\plugins\advimage\css\advimage.css" />
+    <Content Include="include\j\tinymce\plugins\advimage\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\advimage\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\advimage\image.htm" />
+    <Content Include="include\j\tinymce\plugins\advimage\img\sample.gif" />
+    <Content Include="include\j\tinymce\plugins\advimage\js\image.js" />
+    <Content Include="include\j\tinymce\plugins\advimage\langs\en_dlg.js" />
+    <Content Include="include\j\tinymce\plugins\advlink\css\advlink.css" />
+    <Content Include="include\j\tinymce\plugins\advlink\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\advlink\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\advlink\js\advlink.js" />
+    <Content Include="include\j\tinymce\plugins\advlink\langs\en_dlg.js" />
+    <Content Include="include\j\tinymce\plugins\advlink\link.htm" />
+    <Content Include="include\j\tinymce\plugins\advlist\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\advlist\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\autolink\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\autolink\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\autoresize\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\autoresize\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\autosave\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\autosave\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\autosave\langs\en.js" />
+    <Content Include="include\j\tinymce\plugins\bbcode\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\bbcode\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\contextmenu\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\contextmenu\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\directionality\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\directionality\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\emotions\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\emotions\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\emotions\emotions.htm" />
+    <Content Include="include\j\tinymce\plugins\emotions\img\smiley-cool.gif" />
+    <Content Include="include\j\tinymce\plugins\emotions\img\smiley-cry.gif" />
+    <Content Include="include\j\tinymce\plugins\emotions\img\smiley-embarassed.gif" />
+    <Content Include="include\j\tinymce\plugins\emotions\img\smiley-foot-in-mouth.gif" />
+    <Content Include="include\j\tinymce\plugins\emotions\img\smiley-frown.gif" />
+    <Content Include="include\j\tinymce\plugins\emotions\img\smiley-innocent.gif" />
+    <Content Include="include\j\tinymce\plugins\emotions\img\smiley-kiss.gif" />
+    <Content Include="include\j\tinymce\plugins\emotions\img\smiley-laughing.gif" />
+    <Content Include="include\j\tinymce\plugins\emotions\img\smiley-money-mouth.gif" />
+    <Content Include="include\j\tinymce\plugins\emotions\img\smiley-sealed.gif" />
+    <Content Include="include\j\tinymce\plugins\emotions\img\smiley-smile.gif" />
+    <Content Include="include\j\tinymce\plugins\emotions\img\smiley-surprised.gif" />
+    <Content Include="include\j\tinymce\plugins\emotions\img\smiley-tongue-out.gif" />
+    <Content Include="include\j\tinymce\plugins\emotions\img\smiley-undecided.gif" />
+    <Content Include="include\j\tinymce\plugins\emotions\img\smiley-wink.gif" />
+    <Content Include="include\j\tinymce\plugins\emotions\img\smiley-yell.gif" />
+    <Content Include="include\j\tinymce\plugins\emotions\js\emotions.js" />
+    <Content Include="include\j\tinymce\plugins\emotions\langs\en_dlg.js" />
+    <Content Include="include\j\tinymce\plugins\example\dialog.htm" />
+    <Content Include="include\j\tinymce\plugins\example\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\example\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\example\img\example.gif" />
+    <Content Include="include\j\tinymce\plugins\example\js\dialog.js" />
+    <Content Include="include\j\tinymce\plugins\example\langs\en.js" />
+    <Content Include="include\j\tinymce\plugins\example\langs\en_dlg.js" />
+    <Content Include="include\j\tinymce\plugins\example_dependency\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\example_dependency\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\fullpage\css\fullpage.css" />
+    <Content Include="include\j\tinymce\plugins\fullpage\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\fullpage\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\fullpage\fullpage.htm" />
+    <Content Include="include\j\tinymce\plugins\fullpage\js\fullpage.js" />
+    <Content Include="include\j\tinymce\plugins\fullpage\langs\en_dlg.js" />
+    <Content Include="include\j\tinymce\plugins\fullscreen\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\fullscreen\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\fullscreen\fullscreen.htm" />
+    <Content Include="include\j\tinymce\plugins\iespell\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\iespell\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\inlinepopups\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\inlinepopups\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\inlinepopups\skins\clearlooks2\img\alert.gif" />
+    <Content Include="include\j\tinymce\plugins\inlinepopups\skins\clearlooks2\img\button.gif" />
+    <Content Include="include\j\tinymce\plugins\inlinepopups\skins\clearlooks2\img\buttons.gif" />
+    <Content Include="include\j\tinymce\plugins\inlinepopups\skins\clearlooks2\img\confirm.gif" />
+    <Content Include="include\j\tinymce\plugins\inlinepopups\skins\clearlooks2\img\corners.gif" />
+    <Content Include="include\j\tinymce\plugins\inlinepopups\skins\clearlooks2\img\horizontal.gif" />
+    <Content Include="include\j\tinymce\plugins\inlinepopups\skins\clearlooks2\img\vertical.gif" />
+    <Content Include="include\j\tinymce\plugins\inlinepopups\skins\clearlooks2\window.css" />
+    <Content Include="include\j\tinymce\plugins\inlinepopups\skins\themepixels\img\alert.gif" />
+    <Content Include="include\j\tinymce\plugins\inlinepopups\skins\themepixels\img\button.gif" />
+    <Content Include="include\j\tinymce\plugins\inlinepopups\skins\themepixels\img\buttons.gif" />
+    <Content Include="include\j\tinymce\plugins\inlinepopups\skins\themepixels\img\confirm.gif" />
+    <Content Include="include\j\tinymce\plugins\inlinepopups\skins\themepixels\img\corners.gif" />
+    <Content Include="include\j\tinymce\plugins\inlinepopups\skins\themepixels\img\horizontal.gif" />
+    <Content Include="include\j\tinymce\plugins\inlinepopups\skins\themepixels\img\vertical.gif" />
+    <Content Include="include\j\tinymce\plugins\inlinepopups\skins\themepixels\window.css" />
+    <Content Include="include\j\tinymce\plugins\inlinepopups\template.htm" />
+    <Content Include="include\j\tinymce\plugins\insertdatetime\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\insertdatetime\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\layer\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\layer\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\legacyoutput\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\legacyoutput\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\lists\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\lists\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\media\css\media.css" />
+    <Content Include="include\j\tinymce\plugins\media\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\media\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\media\js\embed.js" />
+    <Content Include="include\j\tinymce\plugins\media\js\media.js" />
+    <Content Include="include\j\tinymce\plugins\media\langs\en_dlg.js" />
+    <Content Include="include\j\tinymce\plugins\media\media.htm" />
+    <Content Include="include\j\tinymce\plugins\media\moxieplayer.swf" />
+    <Content Include="include\j\tinymce\plugins\nonbreaking\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\nonbreaking\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\noneditable\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\noneditable\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\pagebreak\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\pagebreak\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\paste\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\paste\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\paste\js\pastetext.js" />
+    <Content Include="include\j\tinymce\plugins\paste\js\pasteword.js" />
+    <Content Include="include\j\tinymce\plugins\paste\langs\en_dlg.js" />
+    <Content Include="include\j\tinymce\plugins\paste\pastetext.htm" />
+    <Content Include="include\j\tinymce\plugins\paste\pasteword.htm" />
+    <Content Include="include\j\tinymce\plugins\preview\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\preview\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\preview\example.html" />
+    <Content Include="include\j\tinymce\plugins\preview\jscripts\embed.js" />
+    <Content Include="include\j\tinymce\plugins\preview\preview.html" />
+    <Content Include="include\j\tinymce\plugins\print\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\print\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\save\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\save\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\searchreplace\css\searchreplace.css" />
+    <Content Include="include\j\tinymce\plugins\searchreplace\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\searchreplace\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\searchreplace\js\searchreplace.js" />
+    <Content Include="include\j\tinymce\plugins\searchreplace\langs\en_dlg.js" />
+    <Content Include="include\j\tinymce\plugins\searchreplace\searchreplace.htm" />
+    <Content Include="include\j\tinymce\plugins\spellchecker\css\content.css" />
+    <Content Include="include\j\tinymce\plugins\spellchecker\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\spellchecker\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\spellchecker\img\wline.gif" />
+    <Content Include="include\j\tinymce\plugins\style\css\props.css" />
+    <Content Include="include\j\tinymce\plugins\style\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\style\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\style\js\props.js" />
+    <Content Include="include\j\tinymce\plugins\style\langs\en_dlg.js" />
+    <Content Include="include\j\tinymce\plugins\style\props.htm" />
+    <Content Include="include\j\tinymce\plugins\style\readme.txt" />
+    <Content Include="include\j\tinymce\plugins\tabfocus\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\tabfocus\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\table\cell.htm" />
+    <Content Include="include\j\tinymce\plugins\table\css\cell.css" />
+    <Content Include="include\j\tinymce\plugins\table\css\row.css" />
+    <Content Include="include\j\tinymce\plugins\table\css\table.css" />
+    <Content Include="include\j\tinymce\plugins\table\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\table\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\table\js\cell.js" />
+    <Content Include="include\j\tinymce\plugins\table\js\merge_cells.js" />
+    <Content Include="include\j\tinymce\plugins\table\js\row.js" />
+    <Content Include="include\j\tinymce\plugins\table\js\table.js" />
+    <Content Include="include\j\tinymce\plugins\table\langs\en_dlg.js" />
+    <Content Include="include\j\tinymce\plugins\table\merge_cells.htm" />
+    <Content Include="include\j\tinymce\plugins\table\row.htm" />
+    <Content Include="include\j\tinymce\plugins\table\table.htm" />
+    <Content Include="include\j\tinymce\plugins\template\blank.htm" />
+    <Content Include="include\j\tinymce\plugins\template\css\template.css" />
+    <Content Include="include\j\tinymce\plugins\template\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\template\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\template\js\template.js" />
+    <Content Include="include\j\tinymce\plugins\template\langs\en_dlg.js" />
+    <Content Include="include\j\tinymce\plugins\template\template.htm" />
+    <Content Include="include\j\tinymce\plugins\visualblocks\css\visualblocks.css" />
+    <Content Include="include\j\tinymce\plugins\visualblocks\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\visualblocks\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\visualchars\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\visualchars\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\wordcount\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\wordcount\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\xhtmlxtras\abbr.htm" />
+    <Content Include="include\j\tinymce\plugins\xhtmlxtras\acronym.htm" />
+    <Content Include="include\j\tinymce\plugins\xhtmlxtras\attributes.htm" />
+    <Content Include="include\j\tinymce\plugins\xhtmlxtras\cite.htm" />
+    <Content Include="include\j\tinymce\plugins\xhtmlxtras\css\attributes.css" />
+    <Content Include="include\j\tinymce\plugins\xhtmlxtras\css\popup.css" />
+    <Content Include="include\j\tinymce\plugins\xhtmlxtras\del.htm" />
+    <Content Include="include\j\tinymce\plugins\xhtmlxtras\editor_plugin.js" />
+    <Content Include="include\j\tinymce\plugins\xhtmlxtras\editor_plugin_src.js" />
+    <Content Include="include\j\tinymce\plugins\xhtmlxtras\ins.htm" />
+    <Content Include="include\j\tinymce\plugins\xhtmlxtras\js\abbr.js" />
+    <Content Include="include\j\tinymce\plugins\xhtmlxtras\js\acronym.js" />
+    <Content Include="include\j\tinymce\plugins\xhtmlxtras\js\attributes.js" />
+    <Content Include="include\j\tinymce\plugins\xhtmlxtras\js\cite.js" />
+    <Content Include="include\j\tinymce\plugins\xhtmlxtras\js\del.js" />
+    <Content Include="include\j\tinymce\plugins\xhtmlxtras\js\element_common.js" />
+    <Content Include="include\j\tinymce\plugins\xhtmlxtras\js\ins.js" />
+    <Content Include="include\j\tinymce\plugins\xhtmlxtras\langs\en_dlg.js" />
+    <Content Include="include\j\tinymce\themes\advanced\about.htm" />
+    <Content Include="include\j\tinymce\themes\advanced\anchor.htm" />
+    <Content Include="include\j\tinymce\themes\advanced\charmap.htm" />
+    <Content Include="include\j\tinymce\themes\advanced\color_picker.htm" />
+    <Content Include="include\j\tinymce\themes\advanced\editor_template.js" />
+    <Content Include="include\j\tinymce\themes\advanced\editor_template_src.js" />
+    <Content Include="include\j\tinymce\themes\advanced\image.htm" />
+    <Content Include="include\j\tinymce\themes\advanced\img\arrow.png" />
+    <Content Include="include\j\tinymce\themes\advanced\img\colorpicker.jpg" />
+    <Content Include="include\j\tinymce\themes\advanced\img\flash.gif" />
+    <Content Include="include\j\tinymce\themes\advanced\img\icons.gif" />
+    <Content Include="include\j\tinymce\themes\advanced\img\iframe.gif" />
+    <Content Include="include\j\tinymce\themes\advanced\img\pagebreak.gif" />
+    <Content Include="include\j\tinymce\themes\advanced\img\quicktime.gif" />
+    <Content Include="include\j\tinymce\themes\advanced\img\realmedia.gif" />
+    <Content Include="include\j\tinymce\themes\advanced\img\shockwave.gif" />
+    <Content Include="include\j\tinymce\themes\advanced\img\trans.gif" />
+    <Content Include="include\j\tinymce\themes\advanced\img\video.gif" />
+    <Content Include="include\j\tinymce\themes\advanced\img\windowsmedia.gif" />
+    <Content Include="include\j\tinymce\themes\advanced\js\about.js" />
+    <Content Include="include\j\tinymce\themes\advanced\js\anchor.js" />
+    <Content Include="include\j\tinymce\themes\advanced\js\charmap.js" />
+    <Content Include="include\j\tinymce\themes\advanced\js\color_picker.js" />
+    <Content Include="include\j\tinymce\themes\advanced\js\image.js" />
+    <Content Include="include\j\tinymce\themes\advanced\js\link.js" />
+    <Content Include="include\j\tinymce\themes\advanced\js\source_editor.js" />
+    <Content Include="include\j\tinymce\themes\advanced\langs\en.js" />
+    <Content Include="include\j\tinymce\themes\advanced\langs\en_dlg.js" />
+    <Content Include="include\j\tinymce\themes\advanced\link.htm" />
+    <Content Include="include\j\tinymce\themes\advanced\shortcuts.htm" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\default\content.css" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\default\dialog.css" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\default\img\buttons.png" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\default\img\items.gif" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\default\img\menu_arrow.gif" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\default\img\menu_check.gif" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\default\img\progress.gif" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\default\img\tabs.gif" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\default\ui.css" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\highcontrast\content.css" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\highcontrast\dialog.css" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\highcontrast\ui.css" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\o2k7\content.css" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\o2k7\dialog.css" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\o2k7\img\button_bg.png" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\o2k7\img\button_bg_black.png" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\o2k7\img\button_bg_silver.png" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\o2k7\ui.css" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\o2k7\ui_black.css" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\o2k7\ui_silver.css" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\themepixels\content.css" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\themepixels\dialog.css" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\themepixels\img\buttons.png" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\themepixels\img\items.gif" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\themepixels\img\menu_arrow.gif" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\themepixels\img\menu_check.gif" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\themepixels\img\progress.gif" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\themepixels\img\tabs.gif" />
+    <Content Include="include\j\tinymce\themes\advanced\skins\themepixels\ui.css" />
+    <Content Include="include\j\tinymce\themes\advanced\source_editor.htm" />
+    <Content Include="include\j\tinymce\themes\simple\editor_template.js" />
+    <Content Include="include\j\tinymce\themes\simple\editor_template_src.js" />
+    <Content Include="include\j\tinymce\themes\simple\img\icons.gif" />
+    <Content Include="include\j\tinymce\themes\simple\langs\en.js" />
+    <Content Include="include\j\tinymce\themes\simple\skins\default\content.css" />
+    <Content Include="include\j\tinymce\themes\simple\skins\default\ui.css" />
+    <Content Include="include\j\tinymce\themes\simple\skins\o2k7\content.css" />
+    <Content Include="include\j\tinymce\themes\simple\skins\o2k7\img\button_bg.png" />
+    <Content Include="include\j\tinymce\themes\simple\skins\o2k7\ui.css" />
+    <Content Include="include\j\tinymce\tiny_mce.js" />
+    <Content Include="include\j\tinymce\tiny_mce_popup.js" />
+    <Content Include="include\j\tinymce\tiny_mce_src.js" />
+    <Content Include="include\j\tinymce\utils\editable_selects.js" />
+    <Content Include="include\j\tinymce\utils\form_utils.js" />
+    <Content Include="include\j\tinymce\utils\mctabs.js" />
+    <Content Include="include\j\tinymce\utils\validate.js" />
+    <Content Include="include\j\ui.spinner.min.js" />
+    <Content Include="include\j\wysiwyg.js" />
+    <Content Include="include\p\lang-apollo.js" />
+    <Content Include="include\p\lang-clj.js" />
+    <Content Include="include\p\lang-css.js" />
+    <Content Include="include\p\lang-go.js" />
+    <Content Include="include\p\lang-hs.js" />
+    <Content Include="include\p\lang-lisp.js" />
+    <Content Include="include\p\lang-lua.js" />
+    <Content Include="include\p\lang-ml.js" />
+    <Content Include="include\p\lang-n.js" />
+    <Content Include="include\p\lang-proto.js" />
+    <Content Include="include\p\lang-scala.js" />
+    <Content Include="include\p\lang-sql.js" />
+    <Content Include="include\p\lang-tex.js" />
+    <Content Include="include\p\lang-vb.js" />
+    <Content Include="include\p\lang-vhdl.js" />
+    <Content Include="include\p\lang-wiki.js" />
+    <Content Include="include\p\lang-xq.js" />
+    <Content Include="include\p\lang-yaml.js" />
+    <Content Include="include\p\prettify.css" />
+    <Content Include="include\p\prettify.js" />
+    <Content Include="Login.aspx" />
     <Content Include="packages.config" />
     <Content Include="App_Config\ConnectionStrings.config" />
+    <Content Include="include\f\fontawesome\fontawesome-webfont.eot" />
+    <Content Include="include\f\fontawesome\fontawesome-webfont.ttf" />
+    <Content Include="include\f\fontawesome\fontawesome-webfont.woff" />
+    <Content Include="include\f\fontawesome\FontAwesome.otf" />
+    <Content Include="include\f\lato\Lato-Bla-webfont.eot" />
+    <Content Include="include\f\lato\Lato-Bla-webfont.ttf" />
+    <Content Include="include\f\lato\Lato-Bla-webfont.woff" />
+    <Content Include="include\f\lato\Lato-BlaIta-webfont.eot" />
+    <Content Include="include\f\lato\Lato-BlaIta-webfont.ttf" />
+    <Content Include="include\f\lato\Lato-BlaIta-webfont.woff" />
+    <Content Include="include\f\lato\Lato-Bol-webfont.eot" />
+    <Content Include="include\f\lato\Lato-Bol-webfont.ttf" />
+    <Content Include="include\f\lato\Lato-Bol-webfont.woff" />
+    <Content Include="include\f\lato\Lato-BolIta-webfont.eot" />
+    <Content Include="include\f\lato\Lato-BolIta-webfont.ttf" />
+    <Content Include="include\f\lato\Lato-BolIta-webfont.woff" />
+    <Content Include="include\f\lato\Lato-Hai-webfont.eot" />
+    <Content Include="include\f\lato\Lato-Hai-webfont.ttf" />
+    <Content Include="include\f\lato\Lato-Hai-webfont.woff" />
+    <Content Include="include\f\lato\Lato-HaiIta-webfont.eot" />
+    <Content Include="include\f\lato\Lato-HaiIta-webfont.ttf" />
+    <Content Include="include\f\lato\Lato-HaiIta-webfont.woff" />
+    <Content Include="include\f\lato\Lato-Lig-webfont.eot" />
+    <Content Include="include\f\lato\Lato-Lig-webfont.ttf" />
+    <Content Include="include\f\lato\Lato-Lig-webfont.woff" />
+    <Content Include="include\f\lato\Lato-LigIta-webfont.eot" />
+    <Content Include="include\f\lato\Lato-LigIta-webfont.ttf" />
+    <Content Include="include\f\lato\Lato-LigIta-webfont.woff" />
+    <Content Include="include\f\lato\Lato-Reg-webfont.eot" />
+    <Content Include="include\f\lato\Lato-Reg-webfont.ttf" />
+    <Content Include="include\f\lato\Lato-Reg-webfont.woff" />
+    <Content Include="include\f\lato\Lato-RegIta-webfont.eot" />
+    <Content Include="include\f\lato\Lato-RegIta-webfont.ttf" />
+    <Content Include="include\f\lato\Lato-RegIta-webfont.woff" />
+    <Content Include="include\f\roboto\.DS_Store" />
+    <Content Include="include\f\roboto\Roboto-Black-webfont.eot" />
+    <Content Include="include\f\roboto\Roboto-Black-webfont.ttf" />
+    <Content Include="include\f\roboto\Roboto-Black-webfont.woff" />
+    <Content Include="include\f\roboto\Roboto-BlackItalic-webfont.eot" />
+    <Content Include="include\f\roboto\Roboto-BlackItalic-webfont.ttf" />
+    <Content Include="include\f\roboto\Roboto-BlackItalic-webfont.woff" />
+    <Content Include="include\f\roboto\Roboto-Bold-webfont.eot" />
+    <Content Include="include\f\roboto\Roboto-Bold-webfont.ttf" />
+    <Content Include="include\f\roboto\Roboto-Bold-webfont.woff" />
+    <Content Include="include\f\roboto\Roboto-BoldCondensed-webfont.eot" />
+    <Content Include="include\f\roboto\Roboto-BoldCondensed-webfont.ttf" />
+    <Content Include="include\f\roboto\Roboto-BoldCondensed-webfont.woff" />
+    <Content Include="include\f\roboto\Roboto-BoldCondensedItalic-webfont.eot" />
+    <Content Include="include\f\roboto\Roboto-BoldCondensedItalic-webfont.ttf" />
+    <Content Include="include\f\roboto\Roboto-BoldCondensedItalic-webfont.woff" />
+    <Content Include="include\f\roboto\Roboto-BoldItalic-webfont.eot" />
+    <Content Include="include\f\roboto\Roboto-BoldItalic-webfont.ttf" />
+    <Content Include="include\f\roboto\Roboto-BoldItalic-webfont.woff" />
+    <Content Include="include\f\roboto\Roboto-Condensed-webfont.eot" />
+    <Content Include="include\f\roboto\Roboto-Condensed-webfont.ttf" />
+    <Content Include="include\f\roboto\Roboto-Condensed-webfont.woff" />
+    <Content Include="include\f\roboto\Roboto-CondensedItalic-webfont.eot" />
+    <Content Include="include\f\roboto\Roboto-CondensedItalic-webfont.ttf" />
+    <Content Include="include\f\roboto\Roboto-CondensedItalic-webfont.woff" />
+    <Content Include="include\f\roboto\Roboto-Italic-webfont.eot" />
+    <Content Include="include\f\roboto\Roboto-Italic-webfont.ttf" />
+    <Content Include="include\f\roboto\Roboto-Italic-webfont.woff" />
+    <Content Include="include\f\roboto\Roboto-Light-webfont.eot" />
+    <Content Include="include\f\roboto\Roboto-Light-webfont.ttf" />
+    <Content Include="include\f\roboto\Roboto-Light-webfont.woff" />
+    <Content Include="include\f\roboto\Roboto-LightItalic-webfont.eot" />
+    <Content Include="include\f\roboto\Roboto-LightItalic-webfont.ttf" />
+    <Content Include="include\f\roboto\Roboto-LightItalic-webfont.woff" />
+    <Content Include="include\f\roboto\Roboto-Medium-webfont.eot" />
+    <Content Include="include\f\roboto\Roboto-Medium-webfont.ttf" />
+    <Content Include="include\f\roboto\Roboto-Medium-webfont.woff" />
+    <Content Include="include\f\roboto\Roboto-MediumItalic-webfont.eot" />
+    <Content Include="include\f\roboto\Roboto-MediumItalic-webfont.ttf" />
+    <Content Include="include\f\roboto\Roboto-MediumItalic-webfont.woff" />
+    <Content Include="include\f\roboto\Roboto-Regular-webfont.eot" />
+    <Content Include="include\f\roboto\Roboto-Regular-webfont.ttf" />
+    <Content Include="include\f\roboto\Roboto-Regular-webfont.woff" />
+    <Content Include="include\f\roboto\Roboto-Thin-webfont.eot" />
+    <Content Include="include\f\roboto\Roboto-Thin-webfont.ttf" />
+    <Content Include="include\f\roboto\Roboto-Thin-webfont.woff" />
+    <Content Include="include\f\roboto\Roboto-ThinItalic-webfont.eot" />
+    <Content Include="include\f\roboto\Roboto-ThinItalic-webfont.ttf" />
+    <Content Include="include\f\roboto\Roboto-ThinItalic-webfont.woff" />
+    <Content Include="include\i\colorpicker\Thumbs.db" />
+    <Content Include="include\i\icons\.DS_Store" />
+    <Content Include="include\i\thumbs\.DS_Store" />
+    <Content Include="Login.Master" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Person.aspx" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.js" />
@@ -247,49 +828,20 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddPerson.aspx.cs">
+      <DependentUpon>AddPerson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddPerson.aspx.designer.cs">
+      <DependentUpon>AddPerson.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\AuthConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\Manage.aspx.cs">
-      <DependentUpon>Manage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\Manage.aspx.designer.cs">
-      <DependentUpon>Manage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\OpenAuthProviders.ascx.cs">
-      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\OpenAuthProviders.ascx.designer.cs">
-      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\Register.aspx.cs">
-      <DependentUpon>Register.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\Register.aspx.designer.cs">
-      <DependentUpon>Register.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\RegisterExternalLogin.aspx.cs">
-      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
-      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Contact.aspx.cs">
@@ -298,6 +850,27 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HeaderTags.ascx.cs">
+      <DependentUpon>HeaderTags.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\HeaderTags.ascx.designer.cs">
+      <DependentUpon>HeaderTags.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.Master.cs">
+      <DependentUpon>Login.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.Master.designer.cs">
+      <DependentUpon>Login.Master</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -308,6 +881,20 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Person.aspx.cs">
+      <DependentUpon>Person.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Person.aspx.designer.cs">
+      <DependentUpon>Person.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -336,7 +923,6 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Account\Web.config" />
     <Content Include="Site.Master" />
   </ItemGroup>
   <ItemGroup>
