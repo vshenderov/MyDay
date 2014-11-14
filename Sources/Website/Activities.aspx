@@ -27,10 +27,12 @@
             var tg1 = jQuery("#person-timeline").timeline({
                 "data_source": "http://myday.local/activities.json?PersonID=<%=PersonId%>",
                 "icon_folder": "/include/i/icons/",
-                "constrain_to_data": true,
                 "show_footer": false,
-                "loaded": function () {
-                },
+				"loaded": function(a,b) {
+					var c = setTimeout(function(){
+						b.zoom(-25);
+					}, 500);
+				}
             });
         }
     </script>
