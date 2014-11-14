@@ -15,69 +15,14 @@
             <div class="maincontentinner">
                 <div class="row-fluid">
                     
-                    <div class="span6">
+                    <div class="span12">
                         
-                        <h4 class="widgettitle">Simple Chart</h4>
-                        <div class="widgetcontent">
-                            <div id="chartplace" style="height:300px;"></div>
-                        </div><!--widgetcontent-->
+						<h4 class="widgettitle">Person timeline</h4>
+						<div class="person-timeline" id="person-timeline">
+							
+						</div>
                         
-                        <h4 class="widgettitle">Bar Chart</h4>
-                        <div class="widgetcontent">
-                            <div id="bargraph" style="height:300px;"></div>
-                        </div><!--widgetcontent-->
-                        
-                        <h4 class="widgettitle">Real Time Chart</h4>
-                        <div class="widgetcontent">
-                            <div id="realtime" style="height:300px;"></div>
-                        </div><!--widgetcontent-->
-                        
-                        <h4 class="widgettitle">Pie Chart</h4>
-                        <div class="widgetcontent">
-                            <div id="piechart" style="height: 300px;"></div>
-                        </div><!--widgetcontent-->
-                        
-                    </div><!--span6-->
-                    
-                    <div class="span6">
-                        
-                        <h4 class="widgettitle">Using Other Symbols</h4>
-                        <div class="widgetcontent">
-                            <div id="chartplace2" style="height:300px;"></div>
-                        </div><!--widgetcontent-->
-                        
-                        <h4 class="widgettitle">Percentiles</h4>
-                        <div class="widgetcontent">
-                            <div id="percentiles" style="height:300px;"></div>
-                        </div><!--widgetcontent-->
-                        
-                        <h4 class="widgettitle">With Crosshair</h4>
-                        <div class="widgetcontent">
-                            <div id="chartplace3" style="height:300px;"></div>
-                        </div><!--widgetcontent-->
-                        
-                        <h4 class="widgettitle">Stacking</h4>
-                        <div class="widgetcontent">
-                            <div id="stacking" style="height:300px;"></div>
-                            
-                            <br />
-                            
-                            <div class="stackControls">
-                                <button class="btn">With stacking</button>
-                                <button class="btn">Without stacking</button>
-                            </div>
-                        
-                            <div class="graphControls">
-                                <button class="btn">Bars</button>
-                                <button class="btn">Lines</button>
-                                <button class="btn">Lines with steps</button>
-                            </div>
-                            
-                            <div class="clearfix"></div>
-                        </div><!--widgetcontent-->
-                        
-                        
-                    </div><!--span6-->
+                    </div><!--span12-->
                     
                 </div><!--row-fluid-->
                     
@@ -90,5 +35,19 @@
     
 </div><!--mainwrapper-->
 
+<script>
+	if(jQuery('#person-timeline').length) {
+		var tg1 = jQuery("#person-timeline").timeline({
+			"data_source": "/include/l/timeglider_version_1.0.3/json/js_history.json",
+			"icon_folder": "/include/i/icons/",
+			"constrain_to_data": true,
+			"show_footer": false,
+			"loaded": function() {
+				//console.log(tg1);
+				//tg1.zoom(-1);
+			},
+		});
+	}
+</script>
 </body>
 </html>
