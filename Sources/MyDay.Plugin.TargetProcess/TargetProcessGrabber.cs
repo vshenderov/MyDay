@@ -25,6 +25,7 @@
             var toString = to.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
 
             var query = QueryGetComments;
+            query = this.FillComments(query, idsString, fromString, toString);
             while (!string.IsNullOrEmpty(query))
             {
                 query = this.FillComments(query, idsString, fromString, toString);

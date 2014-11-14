@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="Edit Person" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Person.aspx.cs" Inherits="MyDay.Web.Person" %>
 <%@ Register TagPrefix="uc" TagName="Footer" Src="~/Controls/Footer.ascx" %>
+<%@ Register TagPrefix="asp" Namespace="System.Web.UI.HtmlControls" Assembly="System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
 
@@ -23,11 +24,11 @@
 								<div class="widgetcontent">
 									<p>
 										<label>Person name:</label>
-										<input type="text" name="username" class="input-xlarge" value="Person 1" />
+										 <asp:HtmlInputText runat="server" ID="inputName" class="input-xlarge"></asp:HtmlInputText>
 									</p>
 									<p>
 										<label>Email:</label>
-										<input type="text" name="email" class="input-xlarge" value="user1@email.com" />
+										<asp:HtmlInputText runat="server" ID="inputEmail" class="input-xlarge"></asp:HtmlInputText>
 									</p>
 								</div>
 							</div>
@@ -38,15 +39,10 @@
 									<p>
 										<label>Select</label>
 										<span class="field inline-fields">
-											<select class="uniformselect" name="select">
-												<option value="">Choose One</option>
-												<option value="">Selection One</option>
-												<option value="">Selection Two</option>
-												<option value="">Selection Three</option>
-												<option value="">Selection Four</option>
-											</select>
-											<input class="input-large" type="text" placeholder=".input-large" name="input3">
-											<a href="#">Add</a>
+										    <asp:DropDownList runat="server" CssClass="uniformselect" ID="ddlTools">
+										    </asp:DropDownList>
+											<asp:HtmlInputText runat="server" ID="inputToolAccount" class="input-xlarge"></asp:HtmlInputText>
+											<asp:LinkButton runat="server" ID="lbAddToolAccount" OnClick="AddToolAccountClick">Add</asp:LinkButton>
 										</span>
 									</p>
 								</div>
@@ -114,4 +110,5 @@
                 
             </div><!--maincontentinner-->
         </div><!--maincontent-->
+    <asp:HiddenField runat="server" ID="hdnPerson"/>
 </asp:Content>

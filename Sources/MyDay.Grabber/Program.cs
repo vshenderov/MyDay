@@ -24,6 +24,7 @@
                             if (pluginclass != null)
                             {
                                 var toolName = pluginclass.GetName();
+                                Console.WriteLine("Grabbing " + toolName + "...");
                                 var tool = Database.Tool.GetToolByName(toolName);
                                 var logins = Database.PersonTool.GetLoginsByTool(tool);
                                 var dateTo = DateTime.Now;
@@ -57,6 +58,7 @@
                 }
             }
 
+            Console.WriteLine("Ready");
             Console.ReadKey();
         }
 
