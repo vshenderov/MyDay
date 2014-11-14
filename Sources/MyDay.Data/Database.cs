@@ -75,6 +75,37 @@
 
                 return result;
             }
+
+            public static List<PersonToolDto> GetAccounts(Entities.Person person)
+            {
+                var result = new List<PersonToolDto>();
+                if (person != null)
+                {
+                    var personTools = Session.CreateCriteria(typeof(Entities.PersonTool))
+                        .Add(Restrictions.Eq(Projections.Property<Entities.PersonTool>(x => x.PersonId), person.Id))
+                        .List<Entities.PersonTool>()
+                        .ToList();
+
+                    if (personTools != null)
+                    {
+                        foreach (var pt in personTools)
+                        {
+                            var dto = new PersonToolDto();
+                            dto.Id = pt.Id;
+                            dto.Account = pt.Account;
+
+                            var tool = Tool.Get(pt.ToolId);
+
+                            dto.ToolName = tool.Name;
+                            dto.Icon = tool.Icon;
+
+                            result.Add(dto);
+                        }
+                    }
+                }
+
+                return result;
+            }
         }
 
         public class Tool : BaseTable<Entities.Tool>

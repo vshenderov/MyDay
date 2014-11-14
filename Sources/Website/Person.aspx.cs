@@ -41,6 +41,8 @@
                 {
                     this.ddlTools.Items.Add(new ListItem(tool.Name, tool.Id.ToString(CultureInfo.InvariantCulture)));
                 }
+
+                this.UpdateList();
             }
         }
 
@@ -67,6 +69,29 @@
             }
 
             Response.Redirect("/Person?ID=" + this.PersonId);
+        }
+
+        protected void RepeaterAccountsItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+            if (e.CommandName == "Delete" && e.CommandArgument.ToString() != string.Empty)
+            {
+                var id = 0;
+                int.TryParse(e.CommandArgument.ToString(), out id);
+                var person = Database.Person.Get(id);
+                Database.Person.Delete(person);
+
+                this.UpdateList();
+            }
+        }
+
+        private void UpdateList()
+        {
+            var personId = 0;
+            int.TryParse(this.hdnPerson.Value, out personId);
+            var person = Database.Person.Get(personId);
+
+            this.rptAccounts.DataSource = Database.PersonTool.GetAccounts(person);
+            this.rptAccounts.DataBind();
         }
     }
 }

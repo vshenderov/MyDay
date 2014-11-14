@@ -58,6 +58,15 @@ namespace MyDay.Web {
         protected global::System.Web.UI.WebControls.LinkButton lbAddToolAccount;
         
         /// <summary>
+        /// rptAccounts control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptAccounts;
+        
+        /// <summary>
         /// hdnPerson control.
         /// </summary>
         /// <remarks>
