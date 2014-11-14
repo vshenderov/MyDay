@@ -1,6 +1,7 @@
 ﻿namespace MyDay.Grabber
 {
     using System;
+    using System.Collections.Generic;
     using System.IO;
     using System.Reflection;
     using MyDay.Plugin;
@@ -9,6 +10,8 @@
     {
         public static void Main(string[] args)
         {
+            var accounts = new List<string> { "3", "6" };
+
             LoadPlugins();
 
             foreach (var a in AppDomain.CurrentDomain.GetAssemblies())
@@ -22,7 +25,7 @@
                             var pluginclass = Activator.CreateInstance(t) as IMyDayGrabberPlugin;
                             if (pluginclass != null)
                             {
-                                var result = pluginclass.Grab();
+                                var result = pluginclass.Grab(accounts, new DateTime(2014, 11, 12), new DateTime(2014, 11, 14));
                             }
                         }
                         catch (Exception ex)
