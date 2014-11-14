@@ -2,6 +2,8 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Globalization;
+
     using MyDay.Data;
     using MyDay.JsonGen.IO;
     using Newtonsoft.Json;
@@ -10,13 +12,14 @@
     {
         public static string SerializeTimeline(int personId, DateTime date)
         {
+            var timelines = new List<Timeline>();
             var timeline = new Timeline();
             var person = Database.Person.Get(personId);
 
             if (person != null)
             {
                 timeline.Id = person.Name;
-                timeline.Description = date.ToShortDateString();
+                timeline.Title = person.Name;
 
                 var activites = new List<Activity>();
 
@@ -24,7 +27,7 @@
                 foreach (var databaseActivity in databaseActivities)
                 {
                     var activity = new Activity();
-                    activity.Title = databaseActivity.Id.ToString();
+                    activity.Title = databaseActivity.Title;
                     activity.Description = databaseActivity.Content;
 
                     var tool = Database.Tool.Get(databaseActivity.ToolId);
@@ -33,6 +36,7 @@
                         activity.Icon = tool.Icon;
                     }
 
+                    activity.Id = databaseActivity.Id.ToString(CultureInfo.InvariantCulture);
                     activity.Importance = "20";
                     activity.DateDisplay = "hour";
                     activity.StartDate = databaseActivity.Date.ToString("yyyy-MM-dd H:mm:ss");
@@ -55,7 +59,9 @@
                 timeline.Tools = tools;
             }
 
-            return JsonConvert.SerializeObject(timeline, Formatting.Indented);
+            timelines.Add(timeline);
+
+            return JsonConvert.SerializeObject(timelines, Formatting.Indented);
         }
     }
 }

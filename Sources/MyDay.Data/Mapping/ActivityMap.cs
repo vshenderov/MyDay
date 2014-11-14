@@ -12,6 +12,7 @@
             this.Map(x => x.PersonId).Not.Nullable();
             this.Map(x => x.ToolId).Not.Nullable();
             this.Map(x => x.Date).Not.Nullable();
+            this.Map(x => x.Title).Length(10000).Not.Nullable();
             this.Map(x => x.Content).Length(10000).Not.Nullable();
         }
     }

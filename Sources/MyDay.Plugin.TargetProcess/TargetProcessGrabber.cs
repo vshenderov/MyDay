@@ -35,6 +35,7 @@
                 list.Add(new Activity()
                 {
                     User = comment.Owner.Id.ToString(CultureInfo.InvariantCulture),
+                    Title = string.Format("Comment added to {0}", comment.General.Id),
                     Content = comment.Description,
                     Time = DateTime.Parse(comment.CreateDate),
                 });

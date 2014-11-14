@@ -45,6 +45,7 @@
     <Compile Include="TPConnector.cs" />
     <Compile Include="XmlObjects\Comment.cs" />
     <Compile Include="XmlObjects\CommentCollection.cs" />
+    <Compile Include="XmlObjects\General.cs" />
     <Compile Include="XmlObjects\Owner.cs" />
   </ItemGroup>
   <ItemGroup>

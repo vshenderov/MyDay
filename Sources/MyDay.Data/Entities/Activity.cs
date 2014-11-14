@@ -12,6 +12,8 @@
 
         public virtual DateTime Date { get; set; }
 
+        public virtual string Title { get; set; }
+
         public virtual string Content { get; set; }
     }
 }

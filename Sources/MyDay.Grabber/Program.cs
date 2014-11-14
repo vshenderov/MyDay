@@ -38,6 +38,7 @@
                                     
                                     {
                                         var activity = new Data.Entities.Activity();
+                                        activity.Title = r.Title;
                                         activity.Content = r.Content;
                                         activity.Date = r.Time;
                                         activity.PersonId = pt.PersonId;
