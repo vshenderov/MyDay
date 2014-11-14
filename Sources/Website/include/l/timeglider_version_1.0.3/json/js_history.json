@@ -1,0 +1,148 @@
+[
+  {
+    "id": "Yuliya Kaborda",
+    "title": "Yuliya Kaborda",
+    "events": [
+      {
+        "id": "1",
+        "title": "Comment added to 51065",
+        "description": "<div>Wait for bugFix</div>\n",
+        "startdate": "2014-11-13 20:11:19",
+        "importance": "20",
+        "date_display": "hour",
+        "icon": "tp.png"
+      },
+      {
+        "id": "2",
+        "title": "Comment added to 49520",
+        "description": "<div>Verified. Issues are attached to US. http&#58;&#47;&#47;targetprocess.colours.nl&#47;tp2&#47;entity&#47;49469</div>\n",
+        "startdate": "2014-11-13 20:00:12",
+        "importance": "20",
+        "date_display": "hour",
+        "icon": "tp.png"
+      },
+      {
+        "id": "3",
+        "title": "Comment added to 49469",
+        "description": "<div>Wait for bugFix</div>\n",
+        "startdate": "2014-11-13 19:34:47",
+        "importance": "20",
+        "date_display": "hour",
+        "icon": "tp.png"
+      },
+      {
+        "id": "4",
+        "title": "Comment added to 49466",
+        "description": "<div>Wait for minor bugFix.</div>\n",
+        "startdate": "2014-11-13 18:28:34",
+        "importance": "20",
+        "date_display": "hour",
+        "icon": "tp.png"
+      },
+      {
+        "id": "5",
+        "title": "Comment added to 49464",
+        "description": "<div>Verified. Minor bugFix.</div>\n",
+        "startdate": "2014-11-12 15:29:01",
+        "importance": "20",
+        "date_display": "hour",
+        "icon": "tp.png"
+      },
+      {
+        "id": "6",
+        "title": "Comment added to 49495",
+        "description": "<div>Checked on QA.</div>\n",
+        "startdate": "2014-11-12 14:14:19",
+        "importance": "20",
+        "date_display": "hour",
+        "icon": "tp.png"
+      },
+      {
+        "id": "7",
+        "title": "Comment added to 51039",
+        "description": "<div>&#64;Please&#44; check issue is reproduced again&#58;</div>\n\n<div>В </div>\n\n<div>http&#58;&#47;&#47;bebeconfort3.qa&#47;kaleo.aspx</div>\n\n<div>http&#58;&#47;&#47;bebeconfort3.qa&#47;Strollers&#47;Bouncers&#47;Kaleo.aspx</div>\n\n<div>В </div>\n\n<div>В </div>\n\n<div>В </div>\n\n<div><img src=\"/upload/images/pasted_cke_37(36).jpg\" /><img src=\"/upload/images/pasted_cke_39(32).jpg\" /></div>\n",
+        "startdate": "2014-11-12 13:51:46",
+        "importance": "20",
+        "date_display": "hour",
+        "icon": "tp.png"
+      },
+      {
+        "id": "8",
+        "title": "Comment added to 49462",
+        "description": "<div>Wait for bugFix</div>\n",
+        "startdate": "2014-11-12 13:43:31",
+        "importance": "20",
+        "date_display": "hour",
+        "icon": "tp.png"
+      },
+      {
+        "id": "9",
+        "title": "Comment added to 49460",
+        "description": "<div>Wait for bugfix</div>\n",
+        "startdate": "2014-11-12 12:33:01",
+       "importance": "20",
+        "date_display": "hour",
+        "icon": "tp.png"
+      },
+      {
+        "id": "10",
+        "title": "Comment added to 49454",
+        "description": "<div>Verified.</div>\n",
+        "startdate": "2014-11-12 12:01:04",
+        "importance": "20",
+        "date_display": "hour",
+        "icon": "tp.png"
+      },
+      {
+        "id": "11",
+        "title": "Comment added to 49458",
+        "description": "<div>Checked on QA.</div>\n",
+        "startdate": "2014-11-12 10:34:46",
+        "importance": "20",
+        "date_display": "hour",
+        "icon": "tp.png"
+      },
+      {
+        "id": "12",
+        "title": "Comment added to 51001",
+        "description": "<div>Verified on QA.</div>\n",
+        "startdate": "2014-11-12 10:12:51",
+        "importance": "20",
+        "date_display": "hour",
+        "icon": "tp.png"
+      },
+      {
+        "id": "13",
+        "title": "Comment added to 51039",
+        "description": "<div>Verified.</div>\n",
+        "startdate": "2014-11-12 10:11:37",
+        "importance": "20",
+        "date_display": "hour",
+        "icon": "tp.png"
+      },
+      {
+        "id": "14",
+        "title": "Comment added to 50949",
+        "description": "<div>Verified.</div>\n",
+        "startdate": "2014-11-12 10:04:08",
+        "importance": "20",
+        "date_display": "hour",
+        "icon": "tp.png"
+      }
+    ],
+    "legend": [
+      {
+        "title": "TargetProcess",
+        "icon": "tp.png"
+      },
+      {
+        "title": "GitHub",
+        "icon": "gh.png"
+      },
+      {
+        "title": "Instagram",
+        "icon": "ig.png"
+      }
+    ]
+  }
+]
